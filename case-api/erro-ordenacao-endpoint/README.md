@@ -1,13 +1,13 @@
 # Falha na ordenação de resultados causa erro HTTP 500 em endpoint de API
 
-# Descrição do Problema:
+## Descrição do Problema:
 
 - Durante a execução de testes funcionais e de API em um módulo de análises operacionais, foi identificada uma falha na funcionalidade de ordenação de resultados, 
 onde determinados campos, ao serem utilizados como critério de ordenação, fazem com que a API retorne erro interno do servidor (HTTP 500).
 
 - O problema ocorre de forma seletiva: alguns parâmetros de ordenação funcionam corretamente, enquanto outros causam falha completa da requisição.
 
-# Contexto do Teste:
+## Contexto do Teste:
 - Tipo de teste: Teste de API / Validação de Regra de Negócio
 - Ambiente: Produção
 - Plataforma: Web (Backend / API REST)
@@ -23,13 +23,13 @@ onde determinados campos, ao serem utilizados como critério de ordenação, faz
 - Enviar a requisição
 - Observar a resposta da API
 
-# Resultado Esperado:
+## Resultado Esperado:
 - A API deve retornar HTTP 200
 - Os dados devem ser exibidos corretamente
 - A ordenação deve respeitar o campo selecionado
 - O comportamento deve ser consistente para todos os critérios de ordenação disponíveis
 
-# Resultado Atual:
+## Resultado Atual:
 - A API retorna HTTP 500 – Internal Server Error
 - Mensagem genérica de erro (“API Error”)
 - Nenhum dado é retornado ao usuário
@@ -42,14 +42,13 @@ onde determinados campos, ao serem utilizados como critério de ordenação, faz
 - Impacto direto na tomada de decisão do usuário
 - Possível aumento de chamados de suporte
 
-# Análise Técnica:
-
-Comportamento observado:
+## Análise Técnica:
+### Comportamento observado:
 - O endpoint aceita múltiplos parâmetros de ordenação
 - Apenas alguns valores específicos causam erro
 - Não há validação prévia ou mensagem clara de erro para o usuário
 
-# Indícios técnicos:
+## Indícios técnicos:
 - Falha no tratamento de determinados campos no backend
 - Possível problema de mapeamento ou serialização
 - Ausência de validação de parâmetros permitidos para ordenação
@@ -79,6 +78,6 @@ Comportamento observado:
 - Impacto de erros de backend na experiência do usuário
 - Necessidade de consistência no comportamento de endpoints
 
-Observação:
-- Este case foi anonimizado e documentado exclusivamente para fins de estudo, aprendizado e portfólio profissional em QA.
-- Nenhuma informação sensível, endpoint privado ou dado real de cliente foi exposto.
+**Observação:**
+- *Este case foi anonimizado e documentado exclusivamente para fins de estudo, aprendizado e portfólio profissional em QA.*
+- *Nenhuma informação sensível, endpoint privado ou dado real de cliente foi exposto.*
