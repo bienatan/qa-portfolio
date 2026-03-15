@@ -65,7 +65,7 @@ OU
 - Análise de Regras de Negócio
 - Teste de Experiência do Usuário (UX)
 
-## Sugestões de Melhoria:
+# Sugestões de Melhoria:
 - Implementar validação de formato de e-mail no front-end e back-end
 - Exigir confirmação de e-mail antes de ativar a conta
 - Criar fluxo de alteração de e-mail não confirmado
