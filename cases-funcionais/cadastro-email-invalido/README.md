@@ -6,8 +6,8 @@
 
 - Posteriormente, o sistema exige validação de e-mail para login, impossibilitando o acesso do usuário e gerando um bloqueio permanente da conta, sem alternativa de recuperação.
 
-# Contexto do Teste:
-## Tipo de teste: Teste Funcional / Validação de Regras de Negócio
+## Contexto do Teste:
+Tipo de teste: Teste Funcional / Validação de Regras de Negócio
 - Ambiente: Produção
 - Plataforma: Web
 - Perfil de usuário: Novo usuário (primeiro acesso)
