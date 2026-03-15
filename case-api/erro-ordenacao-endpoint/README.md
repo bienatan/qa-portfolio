@@ -1,5 +1,4 @@
 # Falha na ordenação de resultados causa erro HTTP 500 em endpoint de API
-
 ## Descrição do Problema:
 
 - Durante a execução de testes funcionais e de API em um módulo de análises operacionais, foi identificada uma falha na funcionalidade de ordenação de resultados, 
